@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stopwatch</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+    <title>stop watch</title>
 </head>
-
 <body>
-    <div class="container">
-        <div class="wrapper">
-            <div class="input">
-                <p>
-                    <span class="min" width="10px" >00</span>
-                    :
-                    <span class="sec" width="10px">00</span>
-                    :
-                    <span class="tens" width="10px">00</span>
-                </p>
+    <div class="wrap">
+        <div class="left_page">
+            <img class="clock" src="img/clock.png" alt="">
+            <img id="arrow3" class="s_hours" src="img/s_h.png" alt="">
+            <img id="arrow2" class="s_min" src="img/s_min.png" alt="">
+            <img id="arrow1" class="s_sec" src="img/s_sec.png" alt="">
+        </div>
+        <div class="right_page">
+            <div class="row1">
+                <span class="time" id="hours"></span>
+                <span class="gg">|hours|</span>
+                <span class="time" id="minutes"></span>
+                <span class="gg">|minutes|</span>
+                <span class="time" id="seconds"></span>
+                <span class="gg">|seconds|</span>
+                <span class="time" id="mseconds"></span>
+                <span class="gg">|milliseconds|</span>
             </div>
-            <div>
-                <button class="btn start">Start</button>
-                <button class="btn stop">Stop</button>
-                <button class="btn reset">Reset</button>
+            <div class="row">
+                <div class="start" id="start">start</div>
+                <div class="pause" id="pause">pause</div>
+                <div class="reset" id="reset">reset</div>
             </div>
         </div>
     </div>
-    <script src="js/script.js">
-    </script>
-</body>
 
+
+
+    <script src="js/main.js"></script>
+</body>
 </html>
